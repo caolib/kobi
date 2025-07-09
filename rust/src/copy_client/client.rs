@@ -84,11 +84,11 @@ impl Client {
                     serde_json::Value::String(format!("Token {}", self.get_token().await.as_str())),
                 );                obj.insert(
                     "referer".to_string(),
-                    serde_json::Value::String("com.copymanga.app-2.3.1".to_string()),
+                    serde_json::Value::String("com.copymanga.app-2.3.2".to_string()),
                 );
                 obj.insert(
                     "userAgent".to_string(),
-                    serde_json::Value::String("COPY/2.3.1".to_string()),
+                    serde_json::Value::String("COPY/2.3.2".to_string()),
                 );
                 obj.insert(
                     "source".to_string(),
@@ -100,7 +100,7 @@ impl Client {
                 );
                 obj.insert(
                     "version".to_string(),
-                    serde_json::Value::String("2.3.1".to_string()),
+                    serde_json::Value::String("2.3.2".to_string()),
                 );
                 obj.insert(
                     "region".to_string(),
@@ -117,6 +117,10 @@ impl Client {
                 obj.insert(
                     "umString".to_string(),
                     serde_json::Value::String("b4c89ca4104ea9a97750314d791520ac".to_string()),
+                );
+                obj.insert(
+                    "pseudoid".to_string(),
+                    serde_json::Value::String("eQcnVQUDUWD6t8iH".to_string()),
                 );
                 obj.insert(
                     "deviceInfo".to_string(),
